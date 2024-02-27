@@ -1,0 +1,10 @@
+---
+const { className, placeholder, id } = Astro.props;
+---
+
+<input
+  type="number"
+  id={id}
+  placeholder={placeholder}
+  class=`[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none border-[1px] border-[hsl(270, 3%, 87%)] rounded-md py-2 pl-3 ${className}`
+/>
